@@ -1,0 +1,89 @@
+@font-family1: 'Merriweather Sans', sans-serif;
+@font-family2: 'IM Fell English SC', serif;
+@color1: rgb(29, 29, 31);
+@color2: rgb(43, 131, 94);
+@color3: rgb(202, 216, 210);
+@color4: rgb(106, 173, 146);
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+.nav{
+    // background-image: url(dala.jpg) no-repeat center;
+    // background-size: cover;
+    border-radius: 45px;
+    margin: 50px 150px 15px 200px;
+    width: 50%;
+    height: 100px;
+    border: 2px solid @color4;
+    padding: 25px;
+    justify-content: center;
+    margin: 25px 15px 25px 250px;
+    font-family: @font-family2;
+    font-size: 35px;
+
+}
+
+.carousel{
+    padding: 10px;
+    height: 1000px;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0;
+
+    .hans:hover{
+            box-shadow: 0 0 10px @color2;
+    }
+    .hans{
+        position: relative;
+        left: 140px;
+        display: flex;
+    }
+}
+
+#psyh{
+    font-family: @font-family2;
+    cursor: pointer;
+    align-items: center;
+    display: inline-block;
+    padding: 30px;
+    justify-content: center;
+    img{
+        display: inline-block;
+        height: 300px;
+        width: 350px;
+    }
+    p{  
+        display: flex;
+        font-weight: bold;
+        text-align:center;
+    }
+}
+.carousel-inner{
+    display: flex;
+}
+
+
+@media(width: 1000px){
+    .nav{
+        p{
+            justify-content: center;
+            margin: -100px 300px 0px 500px;
+        }
+        display: block;
+        // justify-content: center;
+        // margin: 0px 400px 0px 500px;
+        padding: 0;
+    }
+    .carousel{
+        .hans{
+            display:block;
+        }
+        #psyh{
+             display: block;
+        }
+
+    }
+}

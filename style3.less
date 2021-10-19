@@ -1,0 +1,93 @@
+@font-family1: 'Merriweather Sans', sans-serif;
+@font-family2: 'IM Fell English SC', serif;
+@color1: rgb(29, 29, 31);
+@color2: rgb(43, 131, 94);
+@color3: rgb(202, 216, 210);
+@color4: rgb(106, 173, 146);
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(alex-diaz-v3ioNQ5Vii0-unsplash.jpg);
+}
+
+.form-style-2{
+  border: 2px solid @color2;
+  justify-content: center;
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  font-family:@font-family2;
+  margin: 100px 400px 100px 500px;
+}
+.form-style-2-heading{
+	font-weight: bold;
+  font-family:@font-family2;
+	border-bottom: 2px solid @color1;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.form-style-2 label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.form-style-2 label > span{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.form-style-2 input.input-field, .form-style-2 .select-field{
+	width: 48%;	
+}
+.form-style-2 input.input-field, .form-style-2 .tel-number-field,  .form-style-2 .textarea-field, .form-style-2 .select-field{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid @color1;
+	box-shadow: 1px 1px 4px @color1;
+	-moz-box-shadow: 1px 1px 4px @color1;
+	-webkit-box-shadow: 1px 1px 4px @color1;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+.form-style-2 .input-field:focus, .form-style-2 .tel-number-field:focus,  .form-style-2 .textarea-field:focus,  .form-style-2 .select-field:focus{
+	border: 1px solid @color2;
+}
+.form-style-2 .textarea-field{
+	height:100px;
+	width: 55%;
+}
+.form-style-2 input[type=submit],.form-style-2 input[type=button]{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: @color2;
+	color: @color3;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.form-style-2 input[type=submit]:hover, .form-style-2 input[type=button]:hover{
+	background: @color1;
+	color: @color3;
+}
+
+@media(width: 700px){
+	label{
+		display: block;
+	}
+	.form-style-2{
+		display: block;
+		.option{
+			display: block;
+		}
+		.input-field:focus{
+			display: block;
+		}
+
+	}
+}
