@@ -1,2 +1,2 @@
 # project_midterm
-it's project for web-frontend course
+this is a project for a web-frontend course
